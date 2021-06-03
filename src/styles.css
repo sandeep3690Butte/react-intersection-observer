@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  color: blue;
+  background: red;
+  position: relative;
+  top: 50%;
+  margin: 10px auto;
+}
+.hidden {
+  opacity: 0;
+}
+
+.animateScrool {
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
